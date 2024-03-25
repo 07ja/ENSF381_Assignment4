@@ -6,15 +6,21 @@ Submission  : Mar 25, 2024
 ===========================================================================*/
 
 /*import logo from './logo.svg';*/
-import './App.css';
-
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Homepage from './components/Homepage';
+import Productpage from './components/Productpage';
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/products" element={<Productpage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
