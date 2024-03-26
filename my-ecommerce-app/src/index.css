@@ -18,7 +18,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 99%;
+  width: 98%;
 }
 
 .logo img {
@@ -31,7 +31,7 @@ code {
     justify-content: space-between;
     padding: 10px;
     text-decoration: none;
-    width: 99%; 
+    width: 98%; 
 }
 
 /* About Us Section Styles */

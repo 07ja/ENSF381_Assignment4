@@ -7,4 +7,4 @@ React:
 npm install react
 
 React Router DOM:
-npm react-router-dom
+npm install react-router-dom
