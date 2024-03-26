@@ -29,7 +29,7 @@ const HomeMainSection = () => {
             <div className="about-us">
                 <h2>About Us</h2>
                 <p>Welcome to our online store! We are passionate about providing high-quality 
-                    products and exceptional customer service. Learn more aboutour story and 
+                    products and exceptional customer service. Learn more about our story and 
                     commitment to your satisfaction.</p>
                 <Link to="/Productpage">
                     <button>Shop Now</button>
@@ -39,9 +39,9 @@ const HomeMainSection = () => {
                 <h2>Customer Reviews</h2>
                 {userReviews.map((review, index) => (
                     <div ket={index} className="review">
-                        <div>{review.customerName}</div>
-                        <div>{review.reviewContent}</div>
-                        <div>Rating: {Array(review.stars).fill().map((_, i) => <span key={i}>★</span>)}</div>
+                        <div>{review.customerName}</div><br />
+                        <div>{review.reviewContent}</div><br />
+                        <div>Rating: {Array(review.stars).fill().map((_, i) => <span key={i}>★</span>)}</div><br />
                     </div>
                 ))}
             </div>

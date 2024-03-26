@@ -11,13 +11,17 @@ import {Link} from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <div className="logo">Logo</div>
-            <div className="company-name">Company Name</div>
+            <div className="title">
+                <div className="logo">
+                    <img src="/images/logo.png" alt="Logo" />
+                </div>
+                <div className="company-name">Company Name</div>
+            </div>
             <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/products">Products</Link></li>
-                    <li><Link to="/login">Login</Link></li>
+                <ul className = "nav-links">
+                    <Link to="/">Home</Link>
+                    <Link to="/products">Products</Link>
+                    <Link to="/login">Login</Link>
                 </ul>
             </nav>
         </header>

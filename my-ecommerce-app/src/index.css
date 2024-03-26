@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header Styles */
+.title {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+/* Navigation Styles */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    width: 99%; 
+}
+
+/* About Us Section Styles */
+.about-us {
+  padding: 10px;
+}
+
+/* Customer Reviews Styles*/
+.customer-reviews {
+  padding: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 10px;
+}
