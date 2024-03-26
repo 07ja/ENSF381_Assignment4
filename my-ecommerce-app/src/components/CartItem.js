@@ -1,14 +1,14 @@
 import React from 'react';
-// import './CartItem.css'
-const CartItem = ({ item, onRemove }) => {
+import './style.css';
+const CartItem = ({ item, removeFromCart }) => {
     return (
         <div className="cart-item">
-        <img className="item-image" src={item.image} alt={item.name} />
-        <p>{item.name}</p>
-        <p>Price: ${item.price}</p>
+        <img className="item-image" src={item.product.image} alt={item.product.name} />
+        <p>{item.product.name}</p>
+        <p>Price: ${`${item.product.price}`}</p>
         <p>Quantity: {item.quantity}</p>
-        <p>Total: ${item.price * item.quantity}</p>
-        <button className="remove-item" onClick={() => onRemove(item.id)}>Remove</button>
+        <p>Total: ${item.product.price * item.quantity.toFixed(2)}</p>
+        <button onClick={() => removeFromCart(item.product)}>Remove</button>
         </div>
     );
 };

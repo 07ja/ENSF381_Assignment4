@@ -1,15 +1,15 @@
 import React from 'react';
 import CartItem from './CartItem';
-// import './Cart.css'
-const Cart = ({ cartItems, onRemove, onDecrease, onIncrease }) => {
+import './style.css';
+const Cart = ({ cartItems, removeFromCart}) => {
     console.log('Cart items in Cart component:', cartItems);
 
-    const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    const totalPrice = cartItems.reduce((sum, item) => sum + item.quantity * item.product.price, 0);
 
     return (
     <div className="cart">
         {cartItems.map(item => (
-        <CartItem key={item.id} item={item} onRemove={onRemove} onDecrease={onDecrease} onIncrease={onIncrease} />
+            <CartItem key={item.product.id} item={item} removeFromCart={removeFromCart} />
         ))}
 
         <div className='cart-total'>Total (in cart): ${totalPrice.toFixed(2)}</div>

@@ -27,6 +27,7 @@ import Header from './Header';
 import Footer from './Footer';
 import ProductList from './ProductList';
 import Cart from './Cart';
+import './style.css'
 
 function ProductPage() {
     const [cartItems, setCartItems] = useState([]);
@@ -34,7 +35,7 @@ function ProductPage() {
     useEffect(() => {
         const savedCartItems = localStorage.getItem('cartItems');
         if (savedCartItems) {
-        setCartItems(JSON.parse(savedCartItems));
+            setCartItems(JSON.parse(savedCartItems));
         }
     }, []);
     
@@ -70,14 +71,16 @@ function ProductPage() {
     
     return (
         <div className="product-page">
-
-        <table>
-        <tr>
-        <td><ProductList addToCart={addToCart} /></td>
-        <td style={{verticalAlign:'top'}}><Cart cartItems={cartItems} removeFromCart={removeFromCart} /></td>
-        </tr>
-        </table>
-
+            <Header />
+            <table>
+                <tr>
+                <td><ProductList addToCart={addToCart} /></td>
+                <td style={{verticalAlign:'top'}}>
+                    <p className='cart-title'>Shopping Cart</p>
+                    <Cart cartItems={cartItems} removeFromCart={removeFromCart} /></td>
+                </tr>
+            </table>
+            <Footer />
         </div>
     );
 }
