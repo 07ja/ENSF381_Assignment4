@@ -1,3 +1,10 @@
+/*==========================================================================
+Name        : index.css
+Assignment  : Assignment 4
+Author(s)   : Jaimal Sahota (30126909), Xicheng(Justin) Wang (30191121)
+Submission  : Mar 25, 2024
+===========================================================================*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -47,4 +54,34 @@ code {
 /* Footer Styles */
 .footer {
   padding: 10px;
+}
+
+/* ProductPage Styles*/
+.ProductList {
+  display:block;
+  width: 70%;
+}
+
+.product-img{
+  max-width: 100%; 
+  height: 'auto';
+}
+
+.item-image {
+  max-width: 50%; 
+  height: 'auto';
+}
+
+.cart-item {
+  display: block;
+}
+
+.cart {
+  text-align: center;
+}
+
+.cart-title{
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
 }

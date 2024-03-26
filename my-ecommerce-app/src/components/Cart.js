@@ -7,7 +7,6 @@ Submission  : Mar 25, 2024
 
 import React from 'react';
 import CartItem from './CartItem';
-import './style.css';
 const Cart = ({ cartItems, removeFromCart}) => {
     console.log('Cart items in Cart component:', cartItems);
 

@@ -8,7 +8,6 @@ Submission  : Mar 25, 2024
 import React from 'react';
 import ProductItem from './ProductItem';
 import products from '../data/products';
-import './style.css'
 
 
 

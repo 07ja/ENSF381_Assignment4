@@ -27,7 +27,6 @@ import Header from './Header';
 import Footer from './Footer';
 import ProductList from './ProductList';
 import Cart from './Cart';
-import './style.css'
 
 function ProductPage() {
     const [cartItems, setCartItems] = useState([]);

@@ -6,7 +6,6 @@ Submission  : Mar 25, 2024
 ===========================================================================*/
 
 import React from 'react';
-import './style.css';
 const CartItem = ({ item, removeFromCart }) => {
     return (
         <div className="cart-item">
